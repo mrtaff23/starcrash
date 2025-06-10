@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <title>Rockstar Avatar Customizer</title>
+  <meta name="description" content="Gestalte deinen eigenen Rockstar-Avatar, lerne alles über Rockstar-Mode, entdecke spannende Videos und teste dein Wissen mit unserem Quiz!">
+  <meta name="viewport" content="width=375, initial-scale=1.0">
+  <link rel="stylesheet" href="/css/avatar.css">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="#" class="logo">
+        <img src="assets/images/logo.png" alt="Kinder Rockstars Logo" />
+      </a>
+      <button id="menu-btn" class="menu-btn" aria-label="Menü öffnen">
+        &#9776;
+      </button>
+      <nav class="main-nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#code">The Rockstar Code</a></li>
+          <li><a href="#academy">Rockstar Academy</a></li>
+          <li><a href="avatar.html" class="active">Avatar Creator</a></li>
+          <li><a href="#join">Mitglied werden</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="rock-story-section">
+  <div class="story-content">
+    <h2>Die Geschichte des Rockstar-Stils</h2>
+    <p>
+  <strong>Was macht einen echten Rockstar-Look aus?</strong><br>
+  Rockstars erkennt man nicht nur an ihrer Musik, sondern auch an ihrem einzigartigen Stil. Typisch sind Lederjacken, außergewöhnliche Accessoires (z.B. Nieten, Sonnenbrillen, Ketten) und auffällige Frisuren. Die Mode steht für Mut, Kreativität und Individualität  jeder Rockstar drückt damit seine Persönlichkeit aus.<br><br>
+  Probier es selbst aus: Gestalte deinen eigenen Rockstar-Look!
+</p>
+    <button class="start-avatar-btn" id="start-avatar-btn">
+      Gestalte deinen Avatar
+    </button>
+  </div>
+</section>
+<!--avatar Customize-->
+  <section class="avatar-customizer">
+  <h1>Rockstar Avatar Customizer</h1>
+  <div class="container avatar-container">
+    <div class="avatar-box" id="avatar-box">
+      <img id="avatar-img" src="/assets/avatars/avatar_black_base.svg" alt="Avatar">
+      <button id="download-btn" class="download-btn">Avatar herunterladen</button>
+    </div>
+    <div class="option-panel">
+      <h2>Customize your Avatar</h2>
+      <label for="shirt">T-Shirt Farbe:</label>
+      <select id="shirt">
+        <option value="black">Schwarz</option>
+        <option value="green">Grün</option>
+      </select>
+      <label for="pant">Hose:</label>
+      <select id="pant">
+        <option value="default">Normal</option>
+        <option value="maron">Maron</option>
+      </select>
+      <label for="hair">Haare:</label>
+      <select id="hair">
+        <option value="no">Ohne Haare</option>
+        <option value="yes">Mit Haare</option>
+      </select>
+      <label for="glass">Brille:</label>
+      <select id="glass">
+        <option value="no">Ohne Brille</option>
+        <option value="yes">Mit Brille</option>
+      </select>
+    </div>
+  </div>
+  </section>
+
+  <!-- Style Story Section with Vinyl Record -->
+  <section class="style-story">
+    <div class="vinyl-record">
+      <div class="record-groove"></div>
+      <div class="record-center"></div>
+      </div>
+    <p class="credit">Click auf CD um: Too Slow For The Thron, GenosseMajeur abzuspielen</p>
+    <audio id="vinyl-audio" src="assets/sounds/vinyl.mp3"></audio>
+    <div class="story-content">
+      <h2>Warum Rockstars anders stylen</h2>
+      <p>Rockstars haben immer gegen den Strom geschwommen. Ihre Kleidung ist mehr als nur Stoff - es ist eine Rebellion, eine Botschaft, eine zweite Haut. Von Hendrix' psychedelischen Prints bis zu Bowies außerirdischen Outfits:</p>
+      <div class="style-principles">
+        <div class="principle">
+          <i class="fas fa-guitar"></i>
+          <h3>Ausdruck über Regeln</h3>
+          <p>Echte Rockstars brechen Moderegeln. Lederhosen zu Anzugjacken? Warum nicht!</p>
+        </div>
+        <div class="principle">
+          <i class="fas fa-microphone-alt"></i>
+          <h3>Mut zur Übertreibung</h3>
+          <p>Größere Frisuren, auffälligere Muster, schrillere Farben - auf der Bühne zählt Sichtbarkeit</p>
+        </div>
+        <div class="principle">
+          <i class="fas fa-theater-masks"></i>
+          <h3>Die Kunst der Verwandlung</h3>
+          <p>Jeder Auftritt ist eine neue Identität. Von Punk bis Glam Rock - Stil ist wandelbar</p>
+        </div>
+      </div>
+    </div>
+  </section>
+<!-- video section-->
+<section class="videos-section" aria-labelledby="videos-heading">
+  <h2 id="videos-heading">So stylen sich echte Rockstars!</h2>
+  <div class="videos-list">
+    <article class="video-card">
+      <iframe src="https://www.youtube.com/embed/l8sFtycf7sc" title="How to Dress Like a Rockstar"
+        frameborder="0" allowfullscreen loading="lazy"></iframe>
+      <p>How to Dress Like a Rockstar (Tipps auf Englisch)</p>
+    </article>
+    <article class="video-card">
+      <iframe src="https://www.youtube.com/embed/N6qtf_lGlz4" title="Rockstar Style Inspiration"
+        frameborder="0" allowfullscreen loading="lazy"></iframe>
+      <p>Rockstar Style Inspiration (Beispiele & Looks)</p>
+    </article>
+    <article class="video-card">
+      <iframe src="https://www.youtube.com/embed/s4d3DYEwRS4" title="How to Dress Like a Rockstar for Kids"
+        frameborder="0" allowfullscreen loading="lazy"></iframe>
+      <p>How to Dress Like a Rockstar for Kids</p>
+    </article>
+    <article class="video-card">
+      <iframe src="https://www.youtube.com/embed/8f-wn8cKy2I" title="Classic Rockstars Outfits"
+        frameborder="0" allowfullscreen loading="lazy"></iframe>
+      <p>Classic Rockstars Outfits</p>
+    </article>
+  </div>
+</section>
+  <!--quiz section-->
+  <section class="quiz-section" aria-labelledby="quiz-heading">
+  <h2 id="quiz-heading">Rockstar Style Quiz</h2>
+  <form id="rockstar-quiz">
+    <fieldset>
+      <legend>Was ist typisch für einen Rockstar-Look?</legend>
+      <label>
+        <input type="radio" name="q1" value="a" required>
+        Einfarbige, zurückhaltende Kleidung
+      </label><br>
+      <label>
+        <input type="radio" name="q1" value="b">
+        Auffällige Farben und Muster
+      </label><br>
+      <label>
+        <input type="radio" name="q1" value="c">
+        Immer Anzug und Krawatte
+      </label>
+    </fieldset>
+    <fieldset>
+      <legend>Welches Accessoire passt zum Rockstar-Stil?</legend>
+      <label>
+        <input type="radio" name="q2" value="a" required>
+        Dezente Perlenkette
+      </label><br>
+      <label>
+        <input type="radio" name="q2" value="b">
+        Sonnenbrille und Lederarmbänder
+      </label><br>
+      <label>
+        <input type="radio" name="q2" value="c">
+        Kochmütze
+      </label>
+    </fieldset>
+    <button type="submit" class="quiz-btn">Quiz auswerten</button>
+  </form>
+  <div id="quiz-result" aria-live="polite"></div>
+</section>
+ <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer-nav">
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Services</a>
+      <a href="#">Team</a>
+      <a href="#">Kontakt</a>
+    </div>
+    <div class="container footer-copy">
+      <p>&copy; 2025 Kinder Rockstars</p>
+    </div>
+  </footer>
+
+  <script src="/js/avatar.js"></script>
+  <script src="/js/main.js"></script>
+</body>
+</html>

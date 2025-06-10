@@ -15,6 +15,7 @@ html {
 }
 
 body {
+  font-family: 'Comic Sans MS', cursive, sans-serif;font-family: 'Comic Sans MS', cursive, sans-serif;
   background: #1B1B1B;
   color: #EBEBEB;
   line-height: 1.5;
@@ -65,12 +66,21 @@ body {
   display: flex;
   gap: 2rem;
   list-style: none;
+  padding: 1rem 0;
 }
 
 .main-nav a {
   color: #fff;
   text-decoration: none;
   font-weight: 500;
+    padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+ /* transition: background 0.2s;*/
+}
+.main-nav a.active,
+.main-nav a:hover {
+  background: #4caf50;
+  color: #fff;
 }
 
 /* ============================
