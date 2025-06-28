@@ -317,7 +317,7 @@ document.addEventListener("DOMContentLoaded", function () {
     // Frage 10
     let q10 = quizForm.querySelector('input[name="q10"]:checked');
     if (!q10) { fragenFehlen = true; }
-    else if (q10.id === "q10a") { punkte++; }gizt
+    else if (q10.id === "q10a") { punkte++; }
 
     // Wenn eine Frage fehlt
     if (fragenFehlen) {
