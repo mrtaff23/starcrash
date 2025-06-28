@@ -362,22 +362,29 @@ document.addEventListener("DOMContentLoaded", function () {
 
 //_____________Mitgliedwerden____________________________________________________________________________________
 document.addEventListener("DOMContentLoaded", function () {
-  const popup = document.querySelector("#popup");
-  const form = document.querySelector(".form-container");
-  const closeBtn = popup.querySelector(".pop");
+  // Vérifie si on est sur la bonne page grâce à l'existence de #popup
+  const popup = document.getElementById("popup");
 
-  if (form && popup && closeBtn) {
-    form.addEventListener("submit", function (e) {
-      e.preventDefault(); // empêche l'envoi réel
-      popup.style.display = "block"; // affiche le popup
-      form.reset(); // optionnel : vider les champs
-    });
+  if (popup) {
+    const form = document.querySelector("form");
+    const closeBtn = popup.querySelector(".pop");
 
-    closeBtn.addEventListener("click", function () {
-      popup.style.display = "none";
-    });
+    // Si le formulaire est là, on attache l'événement de soumission
+    if (form) {
+      form.addEventListener("submit", function (e) {
+        e.preventDefault();
+        popup.style.display = "block";
+        // Optionnel : form.reset();
+      });
+    }
+
+    // Si le bouton "Close" existe, on lui attache l'événement de clic
+    if (closeBtn) {
+      closeBtn.addEventListener("click", function () {
+        popup.style.display = "none";
+      });
+    }
   }
 });
-
 
 // Show custom popup on form submit (registration)
