@@ -370,7 +370,7 @@ document.addEventListener("DOMContentLoaded", function () {
     form.addEventListener("submit", function (e) {
       e.preventDefault(); // empêche l'envoi réel
       popup.style.display = "block"; // affiche le popup
-      // form.reset(); // optionnel : vider les champs
+      form.reset(); // optionnel : vider les champs
     });
 
     closeBtn.addEventListener("click", function () {
