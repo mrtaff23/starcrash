@@ -1,0 +1,218 @@
+/* ========== GLOBAL STYLES ========== */
+
+/* Applies full-page background image and base styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  margin: 0;
+ color:white;
+ 
+  background: url("/assets/images/Stage.jpg") ;
+  /* background-color: black; */
+}
+
+/* ========== MAIN CONTAINER ========== */
+
+/* Styles the outermost div: <div class="Rockstar_container"> */
+.Rockstar_container {
+  background: none;
+  border-radius: 14px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
+  max-width: 1200px;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  display: grid;
+  justify-self: center;
+  grid-template-columns: 1fr;
+  row-gap: 2.5rem;
+  
+}
+
+/* ========== EINLEITUNG / INTRO SECTION ========== */
+
+/* Styles the first section: <section class="Rockstar_beschreibung"> */
+.Rockstar_beschreibung {
+  background: linear-gradient(105deg, orange 75%, #2b0b71 100%, white 50%);
+  color: white;
+
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+/* Heading: <h2 class="Einführung"> */
+.Einführung {
+  
+  font-size: 2rem;
+  color: rgb(3, 3, 3);
+  text-align: center;
+  text-decoration: underline;
+  text-underline-offset: 5px;
+  margin-bottom: 1.5rem;
+}
+
+/* Paragraph inside .Rockstar_beschreibung */
+.Rockstar_beschreibung p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #000000;
+}
+
+/* ========== SECTION & ARTICLE HEADINGS ========== */
+
+/* Sub-headings: <h3 class="Inhalt"> */
+.Inhalt {
+  font-size: 1.6rem;
+  color: white;
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+/* ========== DETAILS + SUMMARY (used for collapsible info) ========== */
+
+/* All <details> blocks in content */
+details {
+  background-color: #fff9e8;
+  /* border: 2px solid #ffdc99; */
+  border-radius: 10px;
+  margin-bottom: 1.5rem;
+  padding: 1rem;
+  color: black;
+}
+
+/* Summary line inside each <details> */
+details summary {
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 1.1rem;
+  padding: 0.6rem 1rem;
+  background-color: #f0f6ff;
+  border: 2px solid #ccd9ea;
+  border-radius: 8px;
+  color: #1f3b78;
+  margin-bottom: 0.8rem;
+}
+
+/* Hover effect for summary */
+summary:hover {
+  background-color: #dbeaff;
+  border-color: #a5c1f0;
+}
+
+/* Paragraph inside <details> */
+details p {
+  margin: 0.5rem 1rem;
+  font-size: 1rem;
+}
+
+/* ========== VIDEO GRIDS ========== */
+
+/* Container: <div class="videos"> holding figures/iframes/images */
+.videos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+  gap: 1.2rem;
+  margin-top: 1.2rem;
+  margin-bottom: 1.5rem;
+}
+
+/* ========== FIGURE ELEMENTS ========== */
+
+/* For all <figure> elements used around images and iframes */
+figure {
+  background-color: #0c080a;
+  /* border: 2px solid #f0a500; */
+  border-radius: 12px;
+  padding: 1rem;
+ 
+  text-align: center;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* For <figcaption> text under image/video */
+figcaption {
+  font-weight: 600;
+  font-size: 1.05rem;
+  margin-bottom: 0.5rem;
+  color: orange;
+}
+
+/* ========== MEDIA ELEMENTS ========== */
+
+/* For all <img> and <iframe> elements */
+img,
+iframe {
+  width: 100%;
+  max-width: 100%;
+  border-radius: 8px;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  border: none;
+}
+
+/* ========== QUIZ SECTION ========== */
+
+/* Full quiz section: <section class="Quiz"> */
+.Quiz {
+  background-color: lch(92.19% 43.97 115.44);
+  padding: 2rem;
+  border: 2px solid #dbeca7;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+/* Quiz section title: <h2 class="Inhalt"> inside .Quiz */
+.Quiz h2 {
+  color: #2e4374;
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+}
+
+/* All quiz question paragraphs */
+.Quiz p {
+  font-weight: 600;
+  margin-top: 1.2rem;
+  margin-bottom: 0.3rem;
+  color: #1f1f1f;
+}
+
+/* Labels for radio buttons */
+form label {
+  font-weight: normal;
+  color: #333;
+}
+
+/* ========== QUIZ BUTTONS ========== */
+
+/* Button container: <div id="music_quiz_buttons"> */
+#music_quiz_buttons {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+/* Submit and Reset buttons */
+button {
+  background-color: #2e4374;
+  color: white;
+  padding: 0.7rem 1.4rem;
+  margin: 0.5rem;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+  transition: background-color 0.2s ease;
+}
+
+/* Hover effect for quiz buttons */
+/* button:hover {
+  background-color: black;
+} */
+
+/* Utility class for hiding feedback and reset */
+.hidden {
+  display: none;
+}

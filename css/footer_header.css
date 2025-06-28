@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat+Brush&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+h1{
+  font-family: "Caveat Brush", cursive;
+  border-bottom:7px solid white;
+}
+h1:hover{
+  border-bottom:7px solid orange;
+ 
+}
+.logo:hover {
+            
+  transform: scale(1.5);      /* leichte Vergrößern */
+}
+ /* HEADER ------------------------------------------------------------------------------------------*/
+
+.site-header {
+  z-index: 1000;
+  padding-block: 1rem;   /* Oben und unten 1rem Innenabstand */
+  position: sticky;
+}
+
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-block: 1rem;
+}
+
+.logo img {
+  height: 50px;
+}
+
+.menu-btn {
+  display: none;
+  background: none;
+  border: none;
+  color: orange;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.main-nav ul {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+  background: black;
+  border-radius: 5px;
+  
+}
+
+.main-nav a {
+  color:orange;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: large;
+  font-family: "Caveat Brush", cursive; /* rockiger Font */
+/*padding: 0.5rem 0.8rem;
+  border-radius: 0.5rem; */
+}
+
+
+.main-nav a.active,
+.main-nav a:hover,
+.main-nav a:focus{
+  background: orange;
+  color:black;
+  outline: none;
+  border-radius: 4px;
+  padding: 5px;
+}
+
+@media (max-width: 899px) {
+  /* Navigation: Hamburger anzeigen, Hauptnav ausblenden */
+  .menu-btn {
+    display: block;
+  }
+  .main-nav {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background: #2b2b2b;
+    width: 220px;
+    border-radius: 0 0 8px 8px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.5);
+  }
+  .main-nav.open {
+    display: block; /* Wenn .open da ist: Menü anzeigen */
+  }
+  .main-nav ul {
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem;
+  }
+}
+
+/* Desktop-Layout (ab 900px Breite) ----------------------------------------------------------------------------*/
+@media (min-width: 900px) {
+  /* Hero: Zwei Spalten nebeneinander */
+  .site-header{
+    position: sticky;
+    top: 0;
+    background-color: black; 
+    z-index: 1000; /* damit es über allem liegt */
+   
+  }
+  /* Navigation auf Desktop: Hauptnav sichtbar, Hamburger versteckt */
+  .menu-btn {
+    display: none;
+  }
+  .main-nav {
+    position: static;
+    transform: none;
+    background: none;
+    width: auto;
+  }
+  .main-nav ul {
+    flex-direction: row;
+  }
+  
+  
+}
+
+/* FOOTER--------------------------------------------------------------------------------------------  */
+.site-footer {
+  background: #181818;
+  color: #fff;
+  padding: 40px 0 20px 0;
+  font-family: 'Montserrat', Arial, sans-serif;
+}
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1100px;
+  margin: auto;
+  padding: 0 20px;
+  /* gap: 30px; */
+}
+.footer-section {
+  flex: 1 1 220px;
+  margin: 10px 0;
+  min-width: 200px;
+}
+.footer-section h2 {
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+  color: orange;
+  letter-spacing: 1px;
+}
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.footer-section ul li {
+  margin-bottom: 8px;
+}
+.footer-section a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+.footer-section a:hover {
+  color:orange;
+  text-decoration: underline;
+}
+.social-links a {
+  display: inline-block;
+  margin-right: 18px;
+  font-size: 1.7em;
+  color: #fff;
+  transition: color 0.2s;
+}
+.social-links a:last-child {
+  margin-right: 0;
+}
+.social-links a:hover {
+  color: orange;
+}
+.footer-bottom {
+  text-align: center;
+  margin-top: 30px;
+  border-top: 1px solid #333;
+  padding-top: 15px;
+  font-size: 0.95rem;
+  color: #aaa;
+}
+.about{
+  padding-right: 2rem;
+  
+}

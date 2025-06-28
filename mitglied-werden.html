@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author"
+    content="StarCrash Team: Anicha Zabrelle Dong Zankia,D. Wilfred Arnond Teu Dogmo, Henriette Landryne Yemtsap">
+  <meta name="description"
+    content="Werde Teil der Kinder Rockstars! Melde dich kostenlos an, erhalte Tipps, mach bei Events mit und starte dein Musikabenteuer.">
+  <meta name="keywords" content="Mitglied werden, Kinder Musikclub, Rockstar Club, Musikreise, Anmeldung">
+  <!-- Open Graph Meta-Tags für Mitglied werden -->
+<meta property="og:title" content="Dein Backstage-Pass ins Rockstar-Leben – Jetzt Mitglied werden!" />
+<meta property="og:description" content="Werde Teil der Kinder Rockstars! Melde dich kostenlos an, erhalte Tipps, mach bei Events mit und starte dein Musikabenteuer." />
+<meta property="og:image" content="http://143.93.245.165/project/starcrash/assets/images/Mitglied.png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="627" />
+<meta property="og:url" content="http://143.93.245.165/project/starcrash/mitglied-werden.html" />
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="Kinder Rockstars" />
+  <title>Dein Backstage-Pass ins Rockstar-Leben – Jetzt Mitglied werden!</title>
+
+  <link rel="stylesheet" href="css/mitglied.css">
+  <link rel="stylesheet" href="css/footer_header.css" />
+  <link rel="icon" href="assets/images/logo.png" type="image/png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <script src="js/main.js" defer></script>
+</head>
+
+<body>
+
+  <!-- HEADER ------------------------------------------------------------------------------------------->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo"><img src="assets/images/logo.png"
+          alt="Buntes Rockstar-Logo mit Gitarre und Schriftzug ROK ROCK" /></a>
+      <h1>Mitglied</h1>
+      <button id="menu-btn" class="menu-btn" aria-label="Menü öffnen"> &#9776; </button>
+      <nav class="main-nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="rockstar-code.html">Rockstar Code</a></li>
+          <li><a href="rockstar-academy.html">Rockstar Academy</a></li>
+          <li><a href="avatar-creator.html">Avatar Creator</a></li>
+          <li><a href="mitglied-werden.html" class="active">Mitglied werden</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <div class="banner">
+    <strong>Willst du ein echter Rockstar sein?</strong><br />
+
+    Willst du ein echter Rockstar sein? Dann tritt unserer Community bei!
+    Als Mitglied bekommst du coole Tipps, kleine Aufgaben und kannst bei Online-Events mitmachen.
+    Füll einfach das Formular aus und werde Teil der Rockstar-Familie! 🤘🎸
+
+  </div>
+
+  <form class="form-container">
+    <h2>Jetzt sich anmelden!</h2>
+
+    <label for="lastname">Nachname:</label>
+    <input type="text" id="lastname" placeholder="enter your Name ...." required />
+
+    <label for="firstname">Vorname:</label>
+    <input type="text" id="firstname" placeholder="enter your Lastname ...." required />
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" placeholder="enter your Email...." required />
+
+    <label>Gender:</label>
+    <div class="gender">
+      <label><input type="radio" name="gender" value="male" /> Male</label>
+      <label><input type="radio" name="gender" value="female" /> Female</label>
+    </div>
+
+    <label for="dob">Date of birth:</label>
+    <input type="date" id="dob" required />
+
+    <label for="birthplace">Place of birth:</label>
+    <select id="birthplace">
+      <option>Hamburg</option>
+      <option>Berlin</option>
+      <option>Mannheim</option>
+      <option>Worms</option>
+      <option>Stuttgart</option>
+    </select>
+
+    <label for="instrument">Lieblingsinstrument:</label>
+    <select id="instrument" name="instrument">
+      <option>Gitarre</option>
+      <option>Gesang</option>
+      <option>Schlagzeug</option>
+      <option>Bass</option>
+      <option>Keyboard</option>
+      <option>Noch keins, aber ich will!</option>
+    </select>
+
+    <label for="idea">Wenn du ein verrücktes Rockstarkind sein könntest, was wäre das?</label>
+    <textarea id="idea" rows="5" placeholder="Comment here!"></textarea>
+
+    <p id="form-call">Melde dich jetzt kostenlos an und starte dein Abenteuer!</p>
+
+    <button class="sub" type="submit">Jetzt Mitglied werden</button>
+  </form>
+  <div id="popup">
+    Thank you for your registration!<br>
+    You will receive an email soon.
+    <br><br>
+    <button class='pop'>Close</button>
+  </div>
+
+  <div class=" banner">
+  <strong>Warum Mitglied werden?</strong><br />
+  <ul>
+    <li>Du bekommst neue Tipps direkt von der Rockstar Academy </li>
+    <li>Du darfst an exklusiven Quizzen teilnehmen </li>
+    <li>Du wirst Teil einer richtig coolen Community </li>
+    <li>Es kostet nix – nur deine Lust auf Musik!</li>
+  </ul>
+</div>
+</body>
+
+
+
+<footer class="site-footer">
+  <div class="footer-content">
+    <div class="footer-section about">
+      <h2>Über uns</h2>
+      <p>Willkommen auf unserer Rockmusik-Website! Entdecke Styles, Quiz, Avatar-Customizer und mehr.</p>
+    </div>
+    <div class="footer-section links">
+      <h2>Seiten</h2>
+      <ul class="page_links">
+        <li><a href="index.html">Startseite</a></li>
+        <li><a href="rockstar-code.html">Rockstar Code</a></li>
+        <li><a href="rockstar-academy.html">Rockstar Academy</a></li>
+        <li><a href="avatar-creator.html">Avatar Creator</a></li>
+        <li><a href="mitglied-werden.html">StarCrash Club beitreten</a></li>
+      </ul>
+    </div>
+    <div class="footer-section social">
+      <h2>Folge uns</h2>
+      <div class="social-links">
+        <a href="https://facebook.com/" target="_blank" rel="noopener" aria-label="Facebook">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="https://instagram.com/" target="_blank" rel="noopener" aria-label="Instagram">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="https://twitter.com/" target="_blank" rel="noopener" aria-label="Twitter">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a href="https://youtube.com/" target="_blank" rel="noopener" aria-label="YouTube">
+          <i class="fab fa-youtube"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; 2025 StarCrash GmbH. Alle Rechte vorbehalten.</p>
+  </div>
+</footer>
+
+</html>

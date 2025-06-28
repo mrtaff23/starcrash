@@ -1,0 +1,16 @@
+#robots.txt zu http://127.0.0.1:5500 GITHUB
+User-agent: *
+# Erlaubt allen Suchmaschinen, alle öffentlichen Seiten zu durchsuchen
+
+Allow: /
+
+# Sitemap
+Sitemap:GITHUB  
+
+# Hinweis für Googlebot, der mehr Frequenz bei bestimmten Bereichen hat
+User-agent: Googlebot
+Crawl-delay: 10  # Gibt Googlebot eine kleine Verzögerung, um den Server nicht zu überlasten
+
+# Weitere Anweisungen für Bingbot 
+User-agent: Bingbot
+Crawl-delay: 15

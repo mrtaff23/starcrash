@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=375, initial-scale=1.0">
+  <meta name="author" content="StarCrash Team: Anicha Zabrelle Dong Zankia,D. Wilfred Arnond Teu Dogmo, Henriette Landryne Yemtsap">
+  <meta name="description" content="Erstelle deinen Rockstar-Avatar, lerne stylische Outfits kennen und teste dein Wissen im Style-Quiz – für kreative Kids mit Bühnenpower.">
+  <meta name="keywords" content="Avatar Creator, Rockstar Avatar, Kleidung, Stil, Rockstar Look, Gestaltung">
+ <!-- Open Graph Meta-Tags für Avatar Creator -->
+<meta property="og:title" content="Erstelle deinen Rockstar-Avatar – Sei der Star auf der Bühne!" />
+<meta property="og:description" content="Gestalte deinen eigenen Rockstar-Look mit Jacken, Instrumenten & Styles – für kreative Kinder mit Bühnenpower!" />
+<meta property="og:image" content="http://143.93.245.165/project/starcrash/assets/images/Rockavatar" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="627" />
+<meta property="og:url" content="http://143.93.245.165/project/starcrash/avatar-creator.html" />
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="Kinder Rockstars" />
+  
+  <title>Erstelle deinen Rockstar-Avatar – Style dich für die Bühne! | Kinder Rockstars</title>
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <script src="js/main.js" defer></script>
+  <link rel="icon" href="assets/images/logo.png" type="image/png">  <link rel="stylesheet" href="css/avatars.css">
+  <link rel="stylesheet" href="css/footer_header.css">
+</head>
+<body>
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo"><img src="assets/images/logo.png" alt="Buntes Rockstar-Logo mit Gitarre und Schriftzug ROK ROCK"/></a>
+      <h1>Rock Avatar</h1>
+      <button id="menu-btn" class="menu-btn" aria-label="Menü öffnen"> &#9776; </button>
+      <nav class="main-nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="rockstar-code.html">Rockstar Code</a></li>
+          <li><a href="rockstar-academy.html">Rockstar Academy</a></li>
+          <li><a href="avatar-creator.html" class="active">Avatar Creator</a></li>
+          <li><a href="mitglied-werden.html">Mitglied werden</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- STORY SECTION -->
+  <section class="rock-story-section">
+    <div class="story-content">
+      <h2>Die Geschichte des Rockstar-Stils</h2>
+      <p>
+        Stell dir vor: Ein dunkler Bühnenvorhang hebt sich, bunte Scheinwerfer gleiten über die Menge. Mit den ersten Akkorden einer E-Gitarre betritt der Rockstar die Bühne – in Lederjacke, auffälligen Accessoires und einer Frisur, die man nicht vergisst!  
+        <br><br>
+        Rockstar-Mode bedeutet Mut, Kreativität und Individualität. Jeder Look erzählt eine eigene Geschichte, inspiriert von Rebellion, Freiheit und der Liebe zur Musik.  
+        <br><br>
+        Lerne jetzt, was einen echten Rockstar ausmacht – und gestalte anschließend deinen eigenen!
+      </p>
+      <button class="start-avatar-btn" id="start-avatar-btn">
+        Gestalte deinen Avatar
+      </button>
+    </div>
+  </section>
+
+  <!-- AVATAR CUSTOMIZER -->
+  <section class="avatar-customizer">
+    <h2>Rockstar Avatar Customizer</h2>
+    <div class="container avatar-container">
+      <div class="avatar-box" id="avatar-box">
+        <img id="avatar-img" src="assets/avatar/boy_base.png" alt="Comic-Avatar eines Kindes im Rockstar-Stil">
+        <button id="download-btn" class="download-btn">Avatar herunterladen</button>
+      </div>
+      <div class="option-panel">
+        <h2>Customize your Avatar</h2>
+        <label for="sex">Männlich oder Weiblich:</label>
+        <select id="sex">
+          <option value="Mann">Männlich</option>
+          <option value="Frau">Weiblich</option>
+        </select>
+        <label for="Jacke">Jacke:</label>
+        <select id="Jacke">
+          <option value="no">ohne Jacke</option>
+          <option value="yes">Mit Jacke</option>
+        </select>
+        <label for="instrument">Instrumente:</label>
+        <select id="instrument">
+          <option value="micro">Gesang</option>
+          <option value="guitare">Gitarre</option>
+        </select>
+        
+      </div>
+    </div>
+  </section>
+
+  <!-- VINYL STORY SECTION -->
+  <section class="style-story">
+    <div class="vinyl-record">
+      <div class="record-groove"></div>
+      <div class="record-center"></div>
+    </div>
+    <p class="credit">Play: Too Slow For The Thron, GenosseMajeur</p>
+    <audio id="vinyl-audio" src="assets/sounds/vinyl.mp3"></audio>
+    <div class="story-content">
+      <h2>Warum Rockstars anders stylen</h2>
+      <p>Rockstars haben immer gegen den Strom geschwommen. Ihre Kleidung ist mehr als nur Stoff - es ist eine Rebellion, eine Botschaft, eine zweite Haut. Von Hendrix' psychedelischen Prints bis zu Bowies außerirdischen Outfits:</p>
+      <div class="style-principles">
+        <div class="principle">
+          <i class="fas fa-guitar"></i>
+          <h3>Ausdruck über Regeln</h3>
+          <p>Echte Rockstars brechen Moderegeln. Lederhosen zu Anzugjacken? Warum nicht!</p>
+        </div>
+        <div class="principle">
+          <i class="fas fa-microphone-alt"></i>
+          <h3>Mut zur Übertreibung</h3>
+          <p>Größere Frisuren, auffälligere Muster, schrillere Farben - auf der Bühne zählt Sichtbarkeit</p>
+        </div>
+        <div class="principle">
+          <i class="fas fa-theater-masks"></i>
+          <h3>Die Kunst der Verwandlung</h3>
+          <p>Jeder Auftritt ist eine neue Identität. Von Punk bis Glam Rock - Stil ist wandelbar</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- VIDEOS SECTION -->
+  <section class="videos-section" aria-labelledby="videos-heading">
+    <h2 id="videos-heading">So stylen sich echte Rockstars!</h2>
+    <div class="videos-list">
+      <article class="video-card">
+        <iframe src="https://www.youtube.com/embed/l8sFtycf7sc?si" title="How to Dress Like a Rockstar"
+          frameborder="0" allowfullscreen loading="lazy"></iframe>
+        <p>How to Dress Like a Rockstar (Tipps auf Englisch)</p>
+      </article>
+      <article class="video-card">
+        <iframe src="https://www.youtube.com/embed/zaxqlkRpgK0?si" title="Rockstar Style Inspiration"
+          frameborder="0" allowfullscreen loading="lazy"></iframe>
+        <p>Rockstar Style Inspiration (Beispiele & Looks)</p>
+      </article>
+      <article class="video-card">
+        <iframe src="https://www.youtube.com/embed/s4d3DYEwRS4?si" title="How to Dress Like a Rockstar for Kids"
+          frameborder="0" allowfullscreen loading="lazy"></iframe>
+        <p>How to Dress Like a Rockstar for Kids</p>
+      </article>
+      <article class="video-card">
+        <iframe src="https://www.youtube.com/embed/zX2vpQN58ro?si" title="Classic Rockstars Outfits"
+          frameborder="0" allowfullscreen loading="lazy"></iframe>
+        <p>Classic Rockstars Outfits</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- QUIZ SECTION -->
+  <section class="quiz-section" aria-labelledby="quiz-heading">
+    <h2 id="quiz-heading">Rockstar Style Quiz</h2>
+    <form id="rockstar-quiz">
+      <fieldset>
+        <legend>Was ist typisch für einen Rockstar-Look?</legend>
+        <label>
+          <input type="radio" name="q1" value="a" required>
+          Einfarbige, zurückhaltende Kleidung
+        </label><br>
+        <label>
+          <input type="radio" name="q1" value="b">
+          Auffällige Farben und Muster
+        </label><br>
+        <label>
+          <input type="radio" name="q1" value="c">
+          Immer Anzug und Krawatte
+        </label>
+      </fieldset>
+      <fieldset>
+        <legend>Welches Accessoire passt zum Rockstar-Stil?</legend>
+        <label>
+          <input type="radio" name="q2" value="a" required>
+          Dezente Perlenkette
+        </label><br>
+        <label>
+          <input type="radio" name="q2" value="b">
+          Sonnenbrille und Lederarmbänder
+        </label><br>
+        <label>
+          <input type="radio" name="q2" value="c">
+          Kochmütze
+        </label>
+      </fieldset>
+      <button type="submit" class="quiz-btn">Quiz auswerten</button>
+    </form>
+    <div id="quiz-result" aria-live="polite"></div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="footer-content">
+      <div class="footer-section about">
+        <h2>Über uns</h2>
+        <p>Willkommen auf unserer Rockmusik-Website! Entdecke Styles, Quiz, Avatar-Customizer und mehr.</p>
+      </div>
+      <div class="footer-section links">
+        <h2>Seiten</h2>
+        <ul class="page_links">
+          <li><a href="index.html">Startseite</a></li>
+          <li><a href="rockstar-code.html">Rockstar Code</a></li>
+          <li><a href="rockstar-academy.html">Rockstar Academy</a></li>
+          <li><a href="avatar-creator.html">Avatar Creator</a></li>
+          <li><a href="mitglied-werden.html">StarCrash Club beitreten</a></li>
+        </ul>
+      </div>
+      <div class="footer-section social">
+        <h2>Folge uns</h2>
+        <div class="social-links">
+          <a href="https://facebook.com/" target="mywindow" rel="noopener" aria-label="Facebook">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a href="https://instagram.com/" target="_blank" rel="noopener" aria-label="Instagram">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="https://twitter.com/" target="_blank" rel="noopener" aria-label="Twitter">
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a href="https://youtube.com/" target="_blank" rel="noopener" aria-label="YouTube">
+            <i class="fab fa-youtube"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 StarCrash GmbH. Alle Rechte vorbehalten.</p>
+    </div>
+  </footer>
+</body>
+</html>

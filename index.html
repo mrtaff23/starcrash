@@ -1,118 +1,177 @@
 <!DOCTYPE html>
 <html lang="de">
+
 <head>
+  
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="author" content="StarCrash Team: Anicha Zabrelle Dong Zankia,D. Wilfred Arnond Teu Dogmo, Henriette Landryne Yemtsap">
+  <meta name="description" content="Musik lernen, Spaß haben, Rockstar werden! Entdecke unsere bunte Welt aus Gitarren, Bühne und Power für Kinder von 7 bis 14 Jahren.">
+  <meta name="keywords" content="Rockmusik, Kinder, Musik lernen, Rockstar, Gitarrenunterricht, Musik für Kinder">
+  <!-- Open Graph Meta-Tags für Rockstar Code -->
+  <meta property="og:title" content="Mut, Style und Musik – Der geheime Code echter Rockstars | Kinder Rockstars" />
+  <meta property="og:description" content="Finde deinen Stil, entdecke Musiklegenden und knacke den Rockstar-Code – mit Mut, Kreativität und Energie!" />
+  <meta property="og:image" content="http://143.93.245.165/project/starcrash/assets/images/homepage" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="627" />
+  <meta property="og:url" content="http://143.93.245.165/project/starcrash/rockstar-code.html" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Kinder Rockstars" />
+  <title>Starte dein Rockstar-Abenteuer – Musikspaß für starke Kids | Kinder Rockstars</title>
+
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
-  <title>Kinder Rockstars</title>
-  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia"> <!--W3.css font-->
+  <link rel="icon" href="assets/images/logo.png" type="image/png">
+
+  <link rel="stylesheet" href="css/style.css"/>
+  <link rel="stylesheet" href="css/footer_header.css" />
+<script src="js/main.js" defer></script> <!-- damit js nach dem Laden des HTML ausgeführt wird -->
 </head>
+
 <body>
 
-  <!-- HEADER mit responsive NAV -->
+  <!-- HEADER -->
   <header class="site-header">
     <div class="container header-inner">
-      <a href="#" class="logo">
-        <img src="assets/images/logo.png" alt="Kinder Rockstars Logo" />
-      </a>
-      <button id="menu-btn" class="menu-btn" aria-label="Menü öffnen">
-        &#9776;
-      </button>
+      <a href="index.html" class="logo"><img src="assets/images/logo.png"
+          alt="Buntes Rockstar-Logo mit Gitarre und Schriftzug ROK ROCK"/></a>
+      <h1>RockStarCrash</h1>
+      <button id="menu-btn" class="menu-btn" aria-label="Menü öffnen"> &#9776; </button>
       <nav class="main-nav">
         <ul>
-          <li><a href="#" class="active">Home</a></li>
-          <li><a href="#code">The Rockstar Code</a></li>
-          <li><a href="#academy">Rockstar Academy</a></li>
-          <li><a href="avatar.html">Avatar Creator</a></li>
-          <li><a href="#join">Mitglied werden</a></li>
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="rockstar-code.html">Rockstar Code</a></li>
+          <li><a href="rockstar-academy.html">Rockstar Academy</a></li>
+          <li><a href="avatar-creator.html">Avatar Creator</a></li>
+          <li><a href="mitglied-werden.html">Mitglied werden</a></li>
         </ul>
       </nav>
     </div>
   </header>
 
-  <!-- HERO -->
-  <section class="hero">
-    <div class="container hero-inner">
-      <div class="hero-text">
-        <h1>Bist du der nächste Rockstar?</h1>
-        <p>Die Antwort bekommst du hier!</p>
+  <!--Main----------------------------------------------------------------------------------------------------------->
+  <main>
+    <!-- HERO -->
+
+    <section class="hero">
+      <div class="container hero-inner">
+
+        <div class="hero-text">
+          <h2>Bist du der nächste Rockstar?</h2>
+        </div>
+
+        <div class="hero-image">
+          <!-- Hier wird das Bild gezeigt -->
+          <img id="bild" class="hero-slide" src="/assets/images/hero.png" alt="Zwei Kinder mit E-Gitarren auf der Bühne"/>
+        </div>
+
       </div>
-      <div class="hero-image">
-        <img src="assets/images/heroo.png" alt="Zwei Kinder rocken mit Gitarren" />
+    </section>
+
+    <!-- INTRO (blauer Balken) -->
+    <section class="intro">
+      <h2>Mach dich bereit für deinen großen Auftritt!</h2>
+      <div class="container">
+        <p>
+          Rockstars haben Spaß, machen Musik und stehen auf der Bühne!
+          Magst du laute Gitarren, coole Klamotten und viel Action?
+          Dann bist du bei uns genau richtig!
+          Wir zeigen dir, wie du mit deinem Instrument, deinem Look und ganz viel guter Laune ein echter Rockstar wirst.
+        </p>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- INTRO (blauer Balken) -->
-  <section class="intro">
-    <div class="container">
-      <p>
-        Rockstars haben Spaß, machen Musik und stehen auf der Bühne!
-    Magst du laute Gitarren, coole Klamotten und viel Action?
-    Dann bist du bei uns genau richtig!
-    Wir zeigen dir, wie du mit deinem Instrument, deinem Look und ganz viel guter Laune ein echter Rockstar wirst.
-      </p>
-    </div>
-  </section>
+    <!-- FEATURE-BOXES -->
+   <section class="features">
+  <div class="container">
+    <h2>Unsere Rockstar-Welt</h2>
+    <div class="grid">
 
-  <!-- FEATURE-BOXES -->
-  <section class="features">
-    <div class="container">
-      <div class="grid">
-        <div class="box box-orange">
-          <i class="fas fa-book"></i>  
-          <h3>The Rockstar Code</h3>
-          <p> Entdecken Sie die Energie, Disziplin und Kreativität der Rockmusik. 
-      Sei mutig. Sei laut. Sei ein Rockstar!.</p>
-        </div>
-        <div class="box box-blue academy">
-            <i class="bi bi-music-note-beamed"></i>
-          <h3>Rockstar Academy</h3>
-          <p>Lerne die Kunst des Rockstars!
-             Entfalte dein Talent, wachse im Team  sei bereit für die große Bühne!</p>
-        </div>
-        <div class="box box-brown box-tall" id="factt">
-          <i class="bi bi-lightbulb-fill"></i>
-          <h3>Fact</h3>
-          <p>Wusstest du schon? Der längste Gitarren-Solo der Welt dauerte über 24 Stunden!</p>
-        </div>
-        <div class="box box-purple avatar">
-           <i class="fas fa-robot"></i>
-          <h3>Avatar Creator</h3>
-          
-          <p>Gestalte dein Rockstar-Ich!
-     Wähle deinen Style  und deinen Look zeig, wer du bist!</p>
-        </div>
+      <div class="box box-orange"> <!-- ROCKSTAR CODE -->
+        <a href="rockstar-code.html" class="icon-link"><i class="fas fa-book"></i></a>
+        <h3>The Rockstar Code</h3>
+        <p>Entdecken Sie die Energie, Disziplin und Kreativität der Rockmusik.
+          Sei mutig. Sei laut. Sei ein Rockstar!</p>
       </div>
-    </div>
-  </section>
 
-  <!-- CTA Bereich (optional unter den Boxes) -->
-  <section class="cta">
-    <div class="container">
-      <h2>Werde jetzt Teil der Kinder Rockstars!</h2>
-      <p>Bereit für dein Abenteuer?
-      Melde dich an und starte deine Reise in die Welt der Rockmusik!</p>
-      <a href="#join" class="btn">Jetzt anmelden</a>
-      <i class="bi bi-hand-thumbs-up"></i> 
-    </div>
-  </section>
+      <div class="box box-blue academy"> <!-- ROCKSTAR ACADEMY -->
+        <a href="rockstar-academy.html" class="icon-link"><i class="bi bi-music-note-beamed"></i></a>
+        <h3>Rockstar Academy</h3>
+        <p>Lerne die Kunst des Rockstars!
+          Entfalte dein Talent, wachse im Team sei bereit für die große Bühne!</p>
+      </div>
 
+      <div class="box box-brown box-tall" id="factt"> <!-- FACT -->
+        <i class="bi bi-hand-thumbs-up"></i>
+        <h3>Werde jetzt Teil der Kinder Rockstars!</h3>
+        <p>Bereit für dein Abenteuer?
+          Melde dich an und starte deine Reise in die Welt der Rockmusik!</p>
+        <a href="mitglied-werden.html" class="btn">Jetzt anmelden</a>
+      </div>
+
+      <div class="box box-purple avatar"> <!-- AVATAR CREATOR -->
+        <a href="avatar-creator.html" class="icon-link"><i class="fas fa-robot"></i></a>
+        <h3>Avatar Creator</h3>
+        <p>Gestalte dein Rockstar-Ich!
+          Wähle deinen Style und deinen Look zeig, wer du bist!</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+    <!-- Fact  -->
+    <section class="cta">
+      <div class="container">
+        <h2>Fact</h2>
+        <p id="fact-text"> „ Der längste Gitarren-Solo der Welt dauerte über 24 Stunden! “</p>
+        <i class="bi bi-lightbulb-fill"></i>
+      </div>
+    </section>
+  </main>
+  
   <!-- FOOTER -->
   <footer class="site-footer">
-    <div class="container footer-nav">
-      <a href="#">Home</a>
-      <a href="#">About</a>
-      <a href="#">Services</a>
-      <a href="#">Team</a>
-      <a href="#">Kontakt</a>
+    <div class="footer-content">
+      <div class="footer-section about">
+        <h2>Über uns</h2>
+        <p>Willkommen auf unserer Rockmusik-Website! Entdecke Styles, Quiz, Avatar-Customizer und mehr.</p>
+      </div>
+      <div class="footer-section links">
+        <h2>Seiten</h2>
+        <ul class="page_links">
+          <li><a href="index.html">Startseite</a></li>
+          <li><a href="rockstar-code.html">Rockstar Code</a></li>
+          <li><a href="rockstar-academy.html">Rockstar Academy</a></li>
+          <li><a href="avatar-creator.html">Avatar Creator</a></li>
+          <li><a href="mitglied-werden.html">StarCrash Club beitreten</a></li>
+        </ul>
+      </div>
+      <div class="footer-section social">
+        <h2>Folge uns</h2>
+        <div class="social-links">
+          <a href="https://facebook.com/" target="_blank" rel="noopener" aria-label="Facebook">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a href="https://instagram.com/" target="_blank" rel="noopener" aria-label="Instagram">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="https://twitter.com/" target="_blank" rel="noopener" aria-label="Twitter">
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a href="https://youtube.com/" target="_blank" rel="noopener" aria-label="YouTube">
+            <i class="fab fa-youtube"></i>
+          </a>
+        </div>
+      </div>
     </div>
-    <div class="container footer-copy">
-      <p>&copy; 2025 Kinder Rockstars</p>
+    <div class="footer-bottom">
+      <p>&copy; 2025 StarCrash GmbH. Alle Rechte vorbehalten.</p>
     </div>
   </footer>
 
-  <script src="js/main.js"></script>
+
 </body>
+
 </html>

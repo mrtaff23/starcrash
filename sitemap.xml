@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://0xsharlyne.github.io/Mintopia.github.io/index.html</loc>
+    <lastmod>2025-06-28</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.00</priority>
+  </url>
+
+  <url>
+    <lochttps://0xsharlyne.github.io/Mintopia.github.io/mathe.html</loc>
+    <lastmod>2025-06-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+  </url>
+
+  <url>
+    <loc>https://0xsharlyne.github.io/Mintopia.github.io/naturwissenschaft.html</loc>
+    <lastmod>2025-06-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+  </url>
+
+  <url>
+    <loc>https://0xsharlyne.github.io/Mintopia.github.io/informatik.html</loc>
+    <lastmod>2025-06-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+  </url>
+
+  <url>
+    <loc>https://0xsharlyne.github.io/Mintopia.github.io/mystery_box.html</loc>
+    <lastmod>2025-06-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+  </url>
+
+  <url>
+    <loc>https://0xsharlyne.github.io/Mintopia.github.io/result.html</loc>
+    <lastmod>2025-06-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.20</priority>
+  </url>
+
+</urlset>

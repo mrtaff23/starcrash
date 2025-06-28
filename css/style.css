@@ -1,93 +1,48 @@
-/* ============================
-   Reset & Base Styles
-   ============================ */
-*,
-*::before,
-*::after {
+
+@import url('https://fonts.googleapis.com/css2?family=Caveat+Brush&display=swap');
+
+/* Allgemeine Einstellungen */
+
+* {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
-html {
-  font-family: 'Inter', sans-serif;
-  scroll-behavior: smooth;
-}
-
 body {
-  font-family: 'Comic Sans MS', cursive, sans-serif;font-family: 'Comic Sans MS', cursive, sans-serif;
-  background: #1B1B1B;
+  display: grid;
+  grid-template-rows: auto 1fr auto; /* header und footer sind auto / main nimmt den verfügbaren Platz */
+  min-height: 100vh;
+  background: black;
   color: #EBEBEB;
-  line-height: 1.5;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  line-height: 1.5; /* interligne */
 }
 
-/* ============================
-   Container Utility
-   ============================ */
 .container {
-  width: min(90%, 1200px);
-  margin-inline: auto;
-  padding-inline: 1rem;
+  max-width: 1200px;
+  margin: 0 auto; /* horizontal zentriert*/
+  padding: 0 1rem;
 }
 
-/* ============================
-   Header & Navigation
-   ============================ */
-.site-header {
-  background: #1B1B1B;
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-}
 
-.header-inner {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding-block: 1rem;
-}
+/* HEADER ------------------------------------------------------------------------------------------*/
 
-.logo img {
-  height: 50px;
-}
 
-/* Hamburger-Button (nur auf Mobil aktiviert) */
-.menu-btn {
-  display: none;
-  background: none;
-  border: none;
-  color: #fff;
-  font-size: 2rem;
-  cursor: pointer;
-}
 
-/* Desktop-Navigation (standardmäßig sichtbar, Mobil im Media-Query versteckt) */
-.main-nav ul {
-  display: flex;
-  gap: 2rem;
-  list-style: none;
-  padding: 1rem 0;
-}
 
-.main-nav a {
-  color: #fff;
-  text-decoration: none;
-  font-weight: 500;
-    padding: 0.5rem 1rem;
-  border-radius: 0.5rem;
- /* transition: background 0.2s;*/
-}
-.main-nav a.active,
-.main-nav a:hover {
-  background: #4caf50;
-  color: #fff;
-}
 
-/* ============================
-   Hero (Mobile-First)
-   ============================ */
+
+
+
+
+
+
+/* --Main-------------------------------------------------------------------------------------------------------- */
+
+/* Hero */
 .hero {
-  background: #f5f5f5;
+  background:white;
 }
 
 .hero-inner {
@@ -98,7 +53,7 @@ body {
   padding-block: 2rem;
 }
 
-.hero-text h1 {
+.hero-text h2  {
   font-size: 2.5rem;            /* Mobile-angepasst */
   color: #0A0909;
   margin-bottom: 0.5rem;
@@ -108,16 +63,29 @@ body {
   font-size: 1.125rem;
 }
 
-.hero-image img {
+.hero-image {
+  position: relative;
+  height: 550px;
+  overflow: hidden;
+}
+
+
+.hero-image .hero-slide {
   width: 100%;
-  height: auto;
-  border-radius: 8px;
+  height: 100%;
   object-fit: cover;
 }
 
-/* ============================
-   Intro Bar (blauer Balken)
-   ============================ */
+
+.features .grid {
+  display: grid;
+  grid-template-columns: 1fr;   /* Mobile: alle Boxen untereinander */
+  gap: 1rem;
+  margin-block: 2rem;
+  
+}
+
+/*Intro Bar (blauer Balken) */
 .intro {
   background: #60BDDF;
   padding-block: 1.5rem;
@@ -129,18 +97,8 @@ body {
   font-size: 1rem;
 }
 
-/* ============================
-   Feature-Boxes (Mobile-First, einspaltig)
-   ============================ */
-.features .grid {
-  display: grid;
-  grid-template-columns: 1fr;   /* Mobile: alle Boxen untereinander */
-  gap: 1rem;
-  margin-block: 2rem;
-}
-
 .box {
-  padding: 1.5rem;
+  padding: 1.6rem;
   border-radius: 20px;
 }
 
@@ -155,15 +113,65 @@ body {
 .box-brown  { background: #935628; color: #fff; }
 .box-purple { background: #54115D; color: #fff; }
 
+.icon-link {
+  display: inline-block;
+  color: inherit; /* so icon keeps its color */
+  text-decoration: none;
+  animation: pulse 1.5s infinite;
+}
+
+.icon-link:hover,
+.icon-link:focus {
+  color: #20f131; /* or any highlight color you want */
+}
+
+.box-brown .btn {
+  background: linear-gradient(135deg, #022780 50%,#F15520 );
+  color: #fff;
+  padding: 0.75rem ;
+  margin: 0 auto;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight:bold;
+  display: block;
+  width: 4cm;
+  animation: pulse 1.5s infinite;
+}
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.08);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.iconlink{
+  text-decoration: none;
+  animation: pulse 1.5s infinite;
+}
+
 /* Icons innerhalb der Boxen */
 section i {
   font-size: 30px;
   margin-bottom: 10px;
 }
+.bi-lightbulb-fill{
+  color: #F15520;
+ 
+}
+#fact-text {
+  margin-top: 0.5rem;
+  font-size: 1.8rem;
+  font-style: italic;
+  font-family: Sofia, cursive;
+  font-weight: 400;
+}
 
-/* ============================
-   Call-To-Action Section
-   ============================ */
+/* fact Section */
 .cta {
   background: #60BDDF;
   text-align: center;
@@ -174,86 +182,30 @@ section i {
   color: #0A0909;
   margin-bottom: 1rem;
 }
-
-.cta .btn {
-  background: #F15520;
-  color: #fff;
-  padding: 0.75rem 1.5rem;
-  border-radius: 40px;
-  text-decoration: none;
-  font-weight: 600;
+.cta p{
+  color: #0A0909;
+  /* font-size: ; */
 }
 
-/* ============================
-   Footer
-   ============================ */
-.site-footer {
-  background: #000;
-  color: #777;
-  padding-block: 2rem 1rem;
-  text-align: center;
-}
 
-.footer-nav {
-  display: flex;
-  justify-content: center;
-  gap: 1.5rem;
-  flex-wrap: wrap;
-  margin-bottom: 1rem;
-}
 
-.footer-nav a {
-  color: #777;
-  text-decoration: none;
-}
 
-.footer-copy p {
-  font-size: 0.875rem;
-}
-
-/* ============================
-   Mobile-First Media Query (< 900px)
-   ============================ */
-@media (max-width: 899px) {
-  /* Navigation: Hamburger anzeigen, Hauptnav ausblenden */
-  .menu-btn {
-    display: block;
-  }
-  .main-nav {
-    position: absolute;
-    top: 100%;
-    right: 0;
-    background: #1B1B1B;
-    width: 200px;
-    transform: translateX(100%);
-    transition: transform 0.3s ease;
-  }
-  .main-nav.open {
-    transform: translateX(0);
-  }
-  .main-nav ul {
-    flex-direction: column;
-    gap: 1rem;
-    padding: 1rem;
-  }
-}
-
-/* ============================
-   Desktop-Layout (ab 900px Breite)
-   ============================ */
+/* Desktop-Layout (ab 900px Breite) ----------------------------------------------------------------------------*/
 @media (min-width: 900px) {
   /* Hero: Zwei Spalten nebeneinander */
+
   .hero-inner {
     grid-template-columns: 1fr 1fr ;
     text-align: left;
   }
 
-  /* Feature-Grid: 2 Spalten × 3 Zeilen */
+  /* Feature-Grid: 3 Spalten × 2 Zeilen */
   .features .grid {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;      /* zwei gleich breite Spalten */
-    grid-template-rows: auto auto;  /* drei Reihen, Höhe folgt Inhalt */
+    grid-template-columns: 1fr 1fr 1fr;      /* 3 gleich breite Spalten */
+    grid-template-rows: auto auto;  /* 2 Reihen, Höhe folgt Inhalt */
     gap: 1.5rem;
+    
   }
 
   /* Orange („The Rockstar Code“) links spaltenübergreifend zweireihig hoch */
@@ -280,17 +232,5 @@ section i {
     grid-row: 3;        /* dritte Zeile */
   }
 
-  /* Navigation auf Desktop: Hauptnav sichtbar, Hamburger versteckt */
-  .menu-btn {
-    display: none;
-  }
-  .main-nav {
-    position: static;
-    transform: none;
-    background: none;
-    width: auto;
-  }
-  .main-nav ul {
-    flex-direction: row;
-  }
+  
 }

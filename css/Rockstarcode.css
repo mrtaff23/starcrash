@@ -1,0 +1,341 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat+Brush&display=swap');
+/* Allgemeine Einstellungen */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+h1{
+  font-family: "Caveat Brush", cursive;
+  border-bottom:7px solid white;
+}
+h1:hover{
+  border-bottom:7px solid orange;
+ 
+}
+body {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  min-height: 100vh;
+  background: black;
+  color: #EBEBEB;
+  line-height: 1.5;
+  font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+.logo:hover {
+            
+  transform: scale(1.5);      /* leichte Vergrößern */
+}
+
+section {
+  padding-bottom: 1rem;
+}
+
+
+/* HEADER--//----------------------------------------------------------------------------------------------- */
+
+.site-header {
+  align-items: center;
+  z-index: 1000;
+  padding-block: 1rem;
+  position: relative;
+ 
+}
+
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-block: 1rem;
+}
+
+.logo img {
+  height: 50px;
+}
+
+.menu-btn {
+  display: none;
+  background: none;
+  border: none;
+  color: orange;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.main-nav ul {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+  background: black;
+}
+
+.main-nav a {
+  color:orange;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: large;
+   font-family: "Caveat Brush", cursive; /* rockiger Font */
+}
+
+.main-nav a.active,
+.main-nav a:hover,
+.main-nav a:focus{
+  background: orange;
+  color: black;
+  border-radius: 4px;
+  padding: 5px;
+}
+/* Main--//------------------------------------------------------------------------------------------*/
+
+.intro,.intro2
+{
+  color: black;
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 1rem; 
+ min-height: 7rem; /* flexibler */
+ background: linear-gradient(105deg, #0288d1 80%, #290568 100%);
+}
+/* Eigenschaften */
+.eigenschaften-box ul {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.5rem;
+  list-style: none;   /* ✅ Bullet-Points entfernen */
+  padding-left: 0;    /* ✅ Kein Einzug */
+
+
+}
+
+.traits li {
+  padding: 0.5rem 1rem;
+  border-radius: 15px;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  
+}
+.traits p{
+  font-weight: lighter;
+  text-align: left;
+}
+.Mut, .Kreativität, .Teamgeist, .Eigensinn {
+  background: #022780;
+}
+
+.Energie, .Stil {
+  background:orange;
+  box-shadow: 0 2px 7px #ed1811;
+}
+.eigenschaften-box li{
+  box-shadow: 0 2px 8px #f1ecec;
+}
+
+
+/* Legenden (Rockstars) */
+
+.legenden {
+  /* Standard (mobile first): alle untereinander */
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.legende {
+  padding: 1rem;
+  box-sizing: border-box;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  color: white;
+  font-weight: bold;
+  background-color: #022780;
+  box-shadow: 0 2px 8px #f3eded;
+}
+
+.green {
+  background-color: #28C940;
+
+}
+
+
+.legende img {
+  object-fit: cover; /*  object-fit: cover*/
+  flex-shrink: 0;/* évite que l’image se déforme si l’espace est réduit.*/
+  flex-shrink: 0;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Effet au survol */
+.legende img:hover {
+  transform: scale(1.5); /* Zoom x1.2 */
+  box-shadow: 0 0 15px #fff, 0 0 25px #0288d1; /* effet lumineux */
+}
+
+
+/* Comicbox mit Figuren & Sprechblase */
+
+.comicbox {
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+ 
+}
+
+.rockstar-img {
+  width: 70%;
+  max-width: 200px;
+}
+/* SPEECH_BUBBLE */
+.speech-bubble {
+  background: linear-gradient(105deg, orange 75%, #eb5109 100%);
+ 
+  padding: 1rem;
+  border-radius: 20px;
+  border-style: dotted;
+  border-width: 2mm;
+  font-weight: bold;
+  color: black;
+  text-align: center;
+  cursor: pointer;
+  max-width: 300px;
+  
+}
+
+.speech-bubble .small {
+  font-size: 0.9rem;
+  font-weight: normal;
+  margin-top: 0.5rem;
+  display: block;
+}
+@keyframes wiggle {
+  0% { transform: rotate(0deg); }
+  75% { transform: rotate(1deg); }
+  100% { transform: rotate(0deg); }
+  30% { transform: rotate(-3deg); }
+ 
+}
+
+.wiggle {
+  animation: wiggle 0.6s ease-in-out infinite;
+  cursor: pointer;
+}
+
+.small {
+  font-size: 0.9rem;
+  display: block;
+  margin-top: 0.25rem;
+}
+
+/* Mini-Test */
+
+.mini-test {
+  background-color:white;
+  color: black;
+  text-align: left;
+  font-weight: bold;
+  background: linear-gradient(105deg, #0288d1 80%, #290568 100%);
+}
+.mini-test .frage {
+  
+  margin: 1rem;
+  color: black;
+  font-weight: lighter;
+  
+}
+
+.mini-test button {
+  background:orange;
+  color: white;
+  width: 8rem;
+  height: 2rem;
+  cursor: pointer;
+  margin: 1rem;
+  border-radius: 10rem;
+}
+
+ .mini-test button:hover {
+  background: #28C940;
+} 
+
+ .auswertung { /*result */
+  margin: 1rem;
+  color: rgb(101, 1, 18);
+  font-weight: bold;
+  font-style:oblique;
+  font-size: 2rem;
+}
+
+
+
+
+
+/* Responsive Design --//----------------------------------------------------------------------------*/
+
+@media (max-width: 899px) { 
+  .legende, .traits li{
+     box-shadow: 0 3px 0 #f3eded;
+     
+  }
+}
+
+@media (min-width: 900px) {
+  /* Zwei-Spalten-Layout für Eigenschaften */
+  
+  .eigenschaften-box ul {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    margin-left: 10%;
+    margin-right: 10%;
+   
+  }
+
+  .Energie, .Stil {
+    grid-column: span 2; /* sur toute la ligne */
+    
+  }
+  .traits li:hover {
+  transform: translateY(-5px); /* La carte "saute" légèrement vers le haut */
+  }
+.eigenschaften-box li{
+  height: 7rem;
+}
+
+  /* Comicbox horizontal auf großen Displays */
+  .comicbox {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .rockstar-img {
+    width: 25%;
+    max-width: none;
+  }
+  .legenden {
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-left: 10%;
+  margin-right: 10%;
+  }
+
+  .legende {
+   width: 45%;
+  
+  } 
+ 
+  #quiz-form-code {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+
