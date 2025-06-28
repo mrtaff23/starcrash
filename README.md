@@ -39,7 +39,7 @@
 
 ## Live-Link
 Projektadresse:  
-http://143.93.245.165/project/starcrash/index.html
+http://mrtaff23.github.io/starcrash
 
 ## Projektübersicht
 Die Website besteht aus mehreren thematischen Seiten, die modular aufgebaut sind:
