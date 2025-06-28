@@ -1,16 +1,16 @@
-#robots.txt zu http://mrtaff23.github.io/starcrash.github.io
-User-agent: *
-# Erlaubt allen Suchmaschinen, alle öffentlichen Seiten zu durchsuchen
+# robots.txt für https://mrtaff23.github.io/starcrash
 
+# Erlaube allen Bots den Zugriff auf alle Seiten
+User-agent: *
 Allow: /
 
-# Sitemap
-Sitemap:http://mrtaff23.github.io/starcrash.github.io/Sitemap.xml
+# Sitemap-URL (wichtiger Hinweis für Suchmaschinen)
+Sitemap: https://mrtaff23.github.io/starcrash/sitemap.xml
 
-# Hinweis für Googlebot, der mehr Frequenz bei bestimmten Bereichen hat
+# Spezielle Crawler-Verzögerung für Googlebot
 User-agent: Googlebot
-Crawl-delay: 10  # Gibt Googlebot eine kleine Verzögerung, um den Server nicht zu überlasten
+Crawl-delay: 10
 
-# Weitere Anweisungen für Bingbot 
+# Spezielle Crawler-Verzögerung für Bingbot
 User-agent: Bingbot
 Crawl-delay: 15
