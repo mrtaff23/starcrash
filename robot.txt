@@ -1,11 +1,11 @@
-#robots.txt zu http://127.0.0.1:5500 GITHUB
+#robots.txt zu http://mrtaff23.github.io/starcrash.github.io
 User-agent: *
 # Erlaubt allen Suchmaschinen, alle öffentlichen Seiten zu durchsuchen
 
 Allow: /
 
 # Sitemap
-Sitemap:GITHUB  
+Sitemap:http://mrtaff23.github.io/starcrash.github.io/Sitemap.xml
 
 # Hinweis für Googlebot, der mehr Frequenz bei bestimmten Bereichen hat
 User-agent: Googlebot
