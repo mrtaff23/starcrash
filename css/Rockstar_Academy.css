@@ -162,8 +162,7 @@ figcaption {
 /* ========== MEDIA ELEMENTS ========== */
 
 /* For all <img> and <iframe> elements */
-img,
-iframe {
+.content-media {
   width: 100%;
   max-width: 100%;
   border-radius: 8px;
