@@ -27,12 +27,7 @@ body {
   z-index: 2000;         /* ensure it's above background */
        /* optional: limit width */
 }
-.site-header img {
-  max-height: 40px;    /* or another value that fits your design */
-  height: auto;
-  width: auto;
-  display: block;
-}
+
 /* ========== MAIN CONTAINER ========== */
 
 /* Styles the outermost div: <div class="Rockstar_container"> */
