@@ -27,6 +27,10 @@ body {
   z-index: 2000;         /* ensure it's above background */
        /* optional: limit width */
 }
+.academy-page .header-inner {
+  display: flex;
+  justify-content: space-between;
+}
 
 /* ========== MAIN CONTAINER ========== */
 
