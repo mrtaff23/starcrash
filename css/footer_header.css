@@ -18,7 +18,11 @@ h1:hover{
   transform: scale(1.5);      /* leichte Vergrößern */
 }
  /* HEADER ------------------------------------------------------------------------------------------*/
-
+.container {
+  max-width: 1200px;
+  margin: 0 auto; /* horizontal zentriert*/
+  padding: 0 1rem;
+}
 .site-header {
   z-index: 1000;
   padding-block: 1rem;   /* Oben und unten 1rem Innenabstand */
