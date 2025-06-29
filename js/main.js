@@ -180,43 +180,35 @@ document.addEventListener("DOMContentLoaded", function () {
 document.addEventListener("DOMContentLoaded", function () {
   const form = document.getElementById("quiz-form-code");
   const resultBox = document.getElementById("quiz-result-code");
+  const resetBtn = document.getElementById("quiz-reset");
   if (!form || !resultBox) return;
 
   form.addEventListener("submit", function (event) {
     event.preventDefault();
     let a = 0, b = 0, c = 0;
-    const q1 = form.q1.value;
-    const q2 = form.q2.value;
-    const q3 = form.q3.value;
-    const q4 = form.q4.value;
-    if (q1 === "a") a++; else if (q1 === "b") b++; else if (q1 === "c") c++;
-    if (q2 === "a") a++; else if (q2 === "b") b++; else if (q2 === "c") c++;
-    if (q3 === "a") a++; else if (q3 === "b") b++; else if (q3 === "c") c++;
-    if (q4 === "a") a++; else if (q4 === "b") b++; else if (q4 === "c") c++;
+    // Jede Antwort prüfen und zählen
+    ["q1", "q2", "q3", "q4"].forEach(function(q) {
+      if (form[q].value === "a") a++;
+      if (form[q].value === "b") b++;
+      if (form[q].value === "c") c++;
+    });
 
-    let ergebnis = "";
-    if (a >= 3) {
-      ergebnis = "Du hast den Rockstar-Code im Blut! Bühne frei für dich!";
-    } else if (b >= 3) {
-      ergebnis = "Du bist auf dem Weg – trau dich noch mehr!";
-    } else if (c >= 3) {
-      ergebnis = "Vielleicht bist du lieber Produzent? Aber probier’s ruhig mal aus!";
-    } else {
-      ergebnis = "Du bist einzigartig – dein Weg ist ein Mix von allem!";
-    }
-    resultBox.textContent = ergebnis;
+    let result = "";
+    if (a >= 3) result = "Du hast den Rockstar-Code im Blut! Bühne frei für dich!";
+    else if (b >= 3) result = "Du bist auf dem Weg – trau dich noch mehr!";
+    else if (c >= 3) result = "Vielleicht bist du lieber Produzent? Aber probier’s ruhig mal aus!";
+    else result = "Du bist einzigartig – dein Weg ist ein Mix von allem!";
+
+    resultBox.textContent = result;
   });
 
-  const resetBtn = document.getElementById("quiz-reset");
   if (resetBtn) {
     resetBtn.addEventListener("click", function () {
       form.reset();
       resultBox.textContent = "";
     });
   }
-});
-
-//________Rockstar Code_________________________________________________________________________________________________
+});//________Rockstar Code_________________________________________________________________________________________________
 
 //  SPRECHBLASE (SPEECH BUBBLE) 
 const texte = [
