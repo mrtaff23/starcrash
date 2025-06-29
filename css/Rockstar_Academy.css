@@ -25,7 +25,7 @@ body {
   top: 0;
   position: relative;              /* Or 'fixed' or 'sticky' if needed */
   z-index: 2000;         /* ensure it's above background */
-       /* optional: limit width */
+  padding: 0 1rem;     /* optional: limit width */
 }
 .academy-page .header-inner {
   display: flex;
@@ -211,7 +211,7 @@ form label {
 }
 
 /* Submit and Reset buttons */
-button {
+.sub-reset {
   background-color: #2e4374;
   color: white;
   padding: 0.7rem 1.4rem;
